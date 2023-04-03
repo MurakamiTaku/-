@@ -1,16 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
-</head>
-<body>
-<p class="p1">aaa</p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>バニラからの挑戦状！</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: left">バニラからの挑戦状！</h1>
+    <div class="parent">
+      <img src="banira.jpg" class="banira" />
+      <div class="bubble">
+        <p>[?]に入る数字を「ひらがな」で入力せよ</p>
+        <div class="arrow"></div>
+      </div>
+    </div>
+    <img src="banira_q1.jpg" width="300px" /><br />
+    <input type="text" id="answer" />
+    <button id="checkBtn">答え合わせ</button><br /><br />
+    <button id="hintBtn1">ヒント1</button>
+    <p id="result1"></p>
+    <br /><br />
+    <button id="hintBtn2">ヒント2</button>
+    <p id="result2"></p>
+    <br /><br />
+    <button id="hintBtn3">ヒント3</button>
+    <p id="result3"></p>
+    <br /><br />
+
+    <script src="script.js"></script>
+  </body>
 </html>
