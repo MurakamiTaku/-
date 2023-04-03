@@ -2,6 +2,7 @@ const hintBtn = document.getElementById("hintBtn");
 const checkBtn = document.getElementById("checkBtn");
 const answerInput = document.getElementById("answer");
 const result = document.getElementById("result");
+const go = document.getElementById("go");
 
 hintBtn1.addEventListener("click", function () {
   result1.innerText = "時計は何回り？";
@@ -17,8 +18,8 @@ checkBtn.addEventListener("click", function () {
   const answer = answerInput.value.toLowerCase();
 
   if (answer === "さん") {
-    result.innerText = "正解!時計回りでデジタル数字を足すと33になります。";
+    go.innerText = "正解!時計回りでデジタル数字を足すと33になります。";
   } else {
-    result.innerText = "不正解!";
+    go.innerText = "不正解!";
   }
 });

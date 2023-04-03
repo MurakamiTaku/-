@@ -2,34 +2,54 @@ body {
   font-family: sans-serif;
 }
 h1 {
-  text-align: center;
-  width: 300px;
-}
-p {
-  margin-bottom: 5px;
-}
-input[type="text"] {
-  padding: 5px;
-  margin-right: 10px;
-}
-button {
-  padding: 5px 10px;
-  margin-right: 10px;
-}
-#result {
-  margin-top: 10px;
-  font-weight: bold;
-}
-.en img {
-  border-radius: 10px;
-}
-h1 {
   position: relative;
   background: #dfefff;
   box-shadow: 0px 0px 0px 5px #dfefff;
   border: dashed 2px white;
   padding: 0.2em 0.5em;
   color: #454545;
+  margin: 20px auto 0px auto;
+  width: 90%;
+  font-size: 6vw;
+  text-align: center !important;
+}
+#go {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+input[type="text"] {
+  padding: 5px;
+  margin: 0px auto 40px auto;
+  font-size: 4vw;
+  width: 90%;
+  height: 100px;
+}
+button {
+  padding: 5px 10px;
+  font-size: 4vw;
+  margin-top: 30px;
+}
+#result1,
+#result2,
+#result3 {
+  font-weight: bold;
+  font-size: 4vw;
+  margin: 0px;
+}
+.en img {
+  border-radius: 10px;
+}
+input[type="text"] {
+  padding: 5px;
+  margin-bottom: 40px;
+  font-size: 4vw;
+  width: 100%;
+  height: 100px;
+}
+#main {
+  width: 100%;
+  padding: 5px;
 }
 
 h1:after {
@@ -45,11 +65,11 @@ h1:after {
 .parent {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .banira {
   border-radius: 50%;
-  width: 80px;
+  width: 150px;
 }
 .bubble {
   position: relative;
@@ -58,7 +78,9 @@ h1:after {
   border: 1px solid #ccc;
   padding: 10px;
   margin-left: 20px;
-  max-width: 200px;
+  font-size: 4vw;
+  line-height: 4vw;
+  width: 100%;
 }
 .bubble::after {
   content: "";
