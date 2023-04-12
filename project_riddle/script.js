@@ -19,7 +19,7 @@ hintBtn3.addEventListener("click", function () {
 answerBtn.addEventListener("click", function () {
   go.innerText =
   "33が正解なので さん と入力すると正解になります。\n" +
-  "正方形を90度ずつ回転しながらデジタル数字を足すと33になります。";
+  "正方形を90度ずつ回転しながらデジタル数字を足すと33になります。\n";
 });
 
 checkBtn.addEventListener("click", function () {
