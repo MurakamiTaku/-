@@ -13,7 +13,7 @@ hintBtn2.addEventListener("click", function () {
 });
 hintBtn3.addEventListener("click", function () {
   result3.innerText =
-    "時計回り、または反時計回りに回転させてデジタル数字を足していくと、、、";
+    "3?は下のボックスの合計値である。";
 });
 
 answerBtn.addEventListener("click", function () {
