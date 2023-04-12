@@ -1,6 +1,7 @@
 const hintBtn = document.getElementById("hintBtn");
+const answerBtn = document.getElementById("answerBtn");
 const checkBtn = document.getElementById("checkBtn");
-const answerInput = document.getElementById("answer");
+const answerInput = document.getElementById("answerBox");
 const result = document.getElementById("result");
 const go = document.getElementById("go");
 
@@ -15,13 +16,21 @@ hintBtn3.addEventListener("click", function () {
     "時計回り、または反時計回りに回転させてデジタル数字を足していくと、、、";
 });
 
-checkBtn.addEventListener("click", function () {
-  const answer = answerInput.value.toLowerCase();
+answerBtn.addEventListener("click", function () {
+  go.innerText =
+  "33が正解なので さん と入力すると正解になります。\n" +
+  "正方形を90度ずつ回転しながらデジタル数字を足すと33になります。";
+});
 
-  if (answer === "さん") {
+checkBtn.addEventListener("click", function () {
+
+console.log(answerInput.value);
+  if (answerInput.value == "さん") {
     go.innerText =
       "正解! 正方形を90度ずつ回転しながらデジタル数字を足すと33になります。";
-  } else {
+  } else if(answerInput.value == ""){
+    go.innerText = "入力されていません。入力してください。";
+  }else{
     go.innerText = "不正解!";
   }
 });

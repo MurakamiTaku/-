@@ -3,38 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <title>バニラからの挑戦状！</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
   </head>
   <body>
-    <div id="main">
-      <h1 style="text-align: left">バニラからの挑戦状！</h1>
-      <div class="parent">
-        <img src="banira.jpg" class="banira" />
-        <div class="bubble">
-          <p>[?]に入る数字を「ひらがな」で入力せよ</p>
-          <div class="arrow"></div>
+
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="position-relative">
+            <img src="banira.jpg" class="banira img-fluid" />
+            <div class="bubble position-absolute">
+              <p>[?]に入る数字を「ひらがな」で入力せよ</p>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="banira_q1.jpg" class="img-fluid mb-3" />
+          <div class="mt-5">
+          <div id="go"></div></div>
+          <div class="input-group mb-3">  
+            <input type="text" id="answerBox" class="form-control" placeholder="回答を入力してください" />
+          </div>
+          <div class="mt-5">
+          <button id="checkBtn" class="btn btn-primary mb-3" type="button">答え合わせ</button>
+          <button id="answerBtn" class="btn btn-primary mb-3" type="button">答えを見る</button>
+        </div>
+          <div class="mt-5">
+            <button id="hintBtn1" class="btn btn-outline-secondary me-3">ヒント1</button>
+            <p id="result1" class="d-inline"></p>
+          </div>
+          <div class="mt-3">
+            <button id="hintBtn2" class="btn btn-outline-secondary me-3">ヒント2</button>
+            <p id="result2" class="d-inline"></p>
+          </div>
+          <div class="mt-3">
+            <button id="hintBtn3" class="btn btn-outline-secondary me-3">ヒント3</button>
+            <p id="result3" class="d-inline"></p>
+          </div>
         </div>
       </div>
-      <img src="banira_q1.jpg" width="100%" /><br />
-      <div id="go"></div>
-      <input
-        type="text"
-        id="answer"
-        style="box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)"
-      />
-      <button id="checkBtn">答え合わせ</button>
-      <div>
-        <button id="hintBtn1">ヒント1</button>
-        <p id="result1"></p>
-
-        <button id="hintBtn2">ヒント2</button>
-        <p id="result2"></p>
-
-        <button id="hintBtn3">ヒント3</button>
-        <p id="result3"></p>
-        <br /><br /><br /><br /><br /><br /><br />
-      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
