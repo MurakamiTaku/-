@@ -1,0 +1,14 @@
+{
+	"center": {
+	  "prefix": "ci",
+	  "body": [
+		 "bottom: 0;",
+		 "left: 0;",
+		 "margin: auto;",
+		 "position: absolute;",
+		 "right: 0;",
+		 "top: 0;"
+	  ],
+	  "description": "上下左右中央"
+	}
+}
