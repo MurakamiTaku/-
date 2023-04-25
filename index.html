@@ -10,76 +10,170 @@
 
   <body>
     <div class="container">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <a href="#project_mailtool">メルマガ作成ツール(JavaScript)</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#project_riddle">なぞなぞ(JavaScript)</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#project_htmloutput">HTML一括生成ツール(GAS)</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#project_googleana">Googleアナリティクスデータ自動出力(GAS)</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#project_timesale">タイムセール作成ツール(GAS)</a>
-        </li>
-        <li class="list-group-item">
-          <a href="#contact-me">Contact Me</a>
-        </li>
-      </ul>
-      
+      <div class="toc-005">
+        <div>
+            目次
+        </div>
+        <ol>
+              <li>ポートフォリオ</li>
+                <ol>
+                  <li><a href="#project_mailtool">メルマガ作成ツール(JavaScript)</a></li>
+                    <li><a href="#project_riddle">なぞなぞ(JavaScript)</a></li>
+                    <li><a href="#project_htmloutput">HTML一括生成ツール(GAS)</a></li>
+                    <li><a href="#project_googleana">Googleアナリティクスデータ自動出力(GAS)</a></li>
+                    <li><a href="#project_timesale">タイムセール作成ツール(GAS)</a></li>
+                    <li><a href="#project_koukoku">広告用動画</a></li>
+                    <li><a href="#project_program telop">番組テロップ</a></li>
+                </ol>
+                <li>ご要望</li>
+                <ol>
+                  <li>在宅勤務</li>
+                  <li>年収400万〜600万</li>
+                  <li>プログラムのお仕事</li>
+                </ol>
+ 
+        </ol>
+    </div>
 <style>
     .box{
         margin: 100px 0px;
     }
+    h2 {
+  position: relative;
+  padding: 1rem 2rem ;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 4px solid #000;
+}
+.toc-005 {
+    margin-bottom: 30px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+
+.toc-005 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #2589d0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.toc-005 div::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M3.8%2017.2h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.8-.8-.8zm0-15h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8V3c-.1-.4-.4-.8-.8-.8zm0%207.6h-3c-.5%200-.8.3-.8.7v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.7-.8-.7zM23.2%2018h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8zm0-15h-15c-.4%200-.7.3-.7.8v1.5c0%20.4.3.7.7.7h15c.5%200%20.8-.3.8-.8V3.8c0-.5-.3-.8-.8-.8zm0%207.5h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8z%22%2F%3E%3C%2Fsvg%3E');
+    content: '';
+}
+
+.toc-005 ol {
+    list-style-type: decimal;
+    margin: 0;
+    overflow: hidden;
+}
+
+.toc-005 > ol {
+    padding: 1em 1em 1em 3em;
+}
+
+.toc-005 ol ol {
+    margin-top: 5px;
+    padding-left: 1.1em;
+}
+
+.toc-005 li {
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.toc-005 ol ol li {
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.toc-005 a {
+    color: #333;
+    text-decoration: none;
+}
 </style>
 
-      <div id="project_mailtool" class="box">
+
+<a name="project_mailtool"></a>
+      <div class="box">
         <h2>メルマガ作成ツール(JavaScript)</h2>
         <p>文字やアドレスを入れるだけでメルマガが出来上がります。<br>
-            プレビューを見ながら作成することが出来るのでHTML分からない人やフォーマットを崩さずに作成することができます。
-            HTML出力を押すとHTMLが書き出されます。
+            プレビューを見ながら作成することが出来るのでHTML分からない人やフォーマットを崩さずに作成することができます。<br>
+            HTML出力を押すとHTMLが書き出されます。<br>
+            ※目的：HTMLを知らない人やフォーマットを崩さずにメルマガを制作する為<br>
+            ※ポイント：保存機能の搭載です。<br>
+            ※制作期間：3カ月
         </p>
         <a href="https://murakamitaku.github.io/murakami/project_mailtool/index.html">ページはこちら</a>
       </div>
 
-      <div id="project_riddle" class="box">
+      <a name="project_riddle"></a>
+      <div class="box">
         <h2>なぞなぞ(JavaScript)</h2>
         <p>趣味で作成しました。最近謎解きにはまっています。<br>
+          ※ポイント：なぞなぞの内容です。<br>
+          ※制作期間：1日
         </p>
         <a href="https://murakamitaku.github.io/murakami/project_riddle/index.html">ページはこちら</a>
-      </div>     
-      <div id="project_htmloutput" class="box">
+      </div>
+
+      <a name="project_htmloutput"></a>
+      <div class="box">
         <h2>HTML一括生成ツール(GAS)</h2>
-        <p>各セルに文字と画像を入力することにより楽天、YAHOO、shopifyのそれぞれの店舗のフォーマットに沿ったHTMLで書き出されます。
+        <p>各セルに文字と画像を入力することにより楽天、YAHOO、shopifyのそれぞれの店舗のフォーマットに沿ったHTMLで書き出されます。<br>
+          ※目的：業務の効率化<br>
+          ※ポイント：同じ内容であるが店舗によってHTMLのフォーマットを変えるようにしてます。(画像URL等も店舗のURLに変換されます)<br>
+          ※制作期間：4ヶ月<br>
         </p>
         <a href="https://docs.google.com/spreadsheets/d/1U1pSirdyG-WgawXwQmX0AMUdjVlKQLrrQQOF-4mj8Hs/edit#gid=621169068">ページはこちら</a>
       </div>
-    
-      <div id="project_googleana" class="box">
+
+      <a name="project_googleana"></a>
+      <div class="box">
         <h2>Googleアナリティクスデータ自動出力(GAS)</h2>
         <p>商品単位でアナリティクスから指定の期間で、アクセス、転換率等あらゆる情報をスプレッドシートに出力します。<br>
             GASにあるライブラリでGoogleアナリティクスにアクセスします。サンプルはありません。<br>
+            ※目的：業務の効率化<br>
+            ※ポイント：大量データの出力時間に制限がある為入力されていない箇所は飛ばして処理をするようにしてます。
+            ※制作期間：3日<br>
         </p>
         <p></p>
       </div>
-      
-      <div id="project_timesale" class="box">
+
+      <a name="project_timesale"></a>
+      <div class="box">
         <h2>タイムセール作成ツール(GAS)</h2>
         <p>楽天の画像、URL、金額、商品名を入れHTMLの雛形と合体させGoogleドライブに出力します。</p>
+        ※目的：業務の効率化<br>
+        ※制作期間：1日<br>
       </div>
       
-      <div id="education" class="box">
-        <h2>Education</h2>
-        <p>Here's a list of my educational background.</p>
+      <a name="project_movie"></a>
+      <div class="box">
+        <h2>番組テロップ(AdobePremium&FinalCutPro)</h2>
+        <p>副業で動画処理のお仕事を頂いております。<br>
+          主にテロップの作成、配置、文字起こしを行なっています。
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pATziWdsVfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       
+      <a name="project_koukoku"></a>
       <div id="contact-me" class="box">
-        <h2>Contact Me</h2>
-        <p>Here's how to get in touch with me.</p>
+        <h2>広告用動画</h2>
+        <p>広告用のYouTube動画です。</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nXE2Lt9sgSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     
