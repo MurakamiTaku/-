@@ -10,7 +10,7 @@
 
   <body>
     <div class="container">
-      <div class="toc-005">
+      <div class="topic">
         <div>
             目次
         </div>
@@ -21,7 +21,7 @@
                     <li><a href="#project_riddle">なぞなぞ(JavaScript)</a></li>
                     <li><a href="#project_htmloutput">HTML一括生成ツール(GAS)</a></li>
                     <li><a href="#project_googleana">Googleアナリティクスデータ自動出力(GAS)</a></li>
-                    <li><a href="#project_timesale">タイムセール作成ツール(GAS)</a></li>
+                    <li><a href="#project_database">タイムセール作成ツール(GAS)</a></li>
                     <li><a href="#project_koukoku">広告用動画</a></li>
                     <li><a href="#project_program telop">番組テロップ</a></li>
                 </ol>
@@ -47,13 +47,13 @@
   content: '';
   border: 4px solid #000;
 }
-.toc-005 {
+.topic {
     margin-bottom: 30px;
     border-radius: 3px;
     background-color: #f2f2f2;
 }
 
-.toc-005 div {
+.topic div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@
     font-size: 1.1em;
 }
 
-.toc-005 div::before {
+.topic div::before {
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -74,32 +74,32 @@
     content: '';
 }
 
-.toc-005 ol {
+.topic ol {
     list-style-type: decimal;
     margin: 0;
     overflow: hidden;
 }
 
-.toc-005 > ol {
+.topic > ol {
     padding: 1em 1em 1em 3em;
 }
 
-.toc-005 ol ol {
+.topic ol ol {
     margin-top: 5px;
     padding-left: 1.1em;
 }
 
-.toc-005 li {
+.topic li {
     padding: 5px 0;
     font-weight: 600;
 }
 
-.toc-005 ol ol li {
+.topic ol ol li {
     font-weight: 500;
     font-size: .9em;
 }
 
-.toc-005 a {
+.topic a {
     color: #333;
     text-decoration: none;
 }
@@ -152,12 +152,13 @@
         <p></p>
       </div>
 
-      <a name="project_timesale"></a>
+      <a name="project_database"></a>
       <div class="box">
-        <h2>タイムセール作成ツール(GAS)</h2>
-        <p>楽天の画像、URL、金額、商品名を入れHTMLの雛形と合体させGoogleドライブに出力します。</p>
+        <h2>データベース(GAS)</h2>
+        <p>メルマガ作成時に必要なデータをまとめました。</p>
         ※目的：業務の効率化<br>
-        ※制作期間：1日<br>
+        ※制作期間：1週間<br>
+
       </div>
       
       <a name="project_movie"></a>
